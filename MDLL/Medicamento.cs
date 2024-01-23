@@ -95,11 +95,7 @@ namespace MDLL
             }
             catch (Exception e)
             {
-                //throw;               
-                //throw new System.FormatException("Fui eu que gerei");
-                //throw new DataInvalidaException();
-                throw new DataInvalida("Insira uma data correta...o tripeiro!", e);
-                //throw new DataInvalidaException("Insira uma data correta...ó tripeiro!", e);
+                throw new DataInvalida("Data invalida.", e);
             }
         }
         #endregion
