@@ -16,7 +16,6 @@ namespace MDLL.Exceptions
 
             public DataInvalida(string s, Exception e)
             {
-                //throw new Exception(e.Message + " - " + s);
                 throw new DataInvalida(e.Message + " - " + s);
             }
 

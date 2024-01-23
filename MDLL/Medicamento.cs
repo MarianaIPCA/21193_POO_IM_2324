@@ -86,18 +86,6 @@ namespace MDLL
             return 1;
 
         }
-
-        public static DateTime NovaData(string d)
-        {
-            try
-            {
-                return (DateTime.Parse(d));
-            }
-            catch (Exception e)
-            {
-                throw new DataInvalida("Data invalida.", e);
-            }
-        }
         #endregion
 
         #endregion
