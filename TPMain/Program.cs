@@ -12,6 +12,9 @@ namespace TPMain
 {
     public class Program
     {
+        /// <summary>
+        /// Exemplo de implementação
+        /// </summary>
         public static void Main()
         {
             CriarInstanciaFarmacia();

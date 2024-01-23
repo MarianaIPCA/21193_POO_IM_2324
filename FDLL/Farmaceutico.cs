@@ -22,7 +22,7 @@ namespace MDLL
 
         #region Construtores
         /// <summary>
-        /// 
+        /// Construtor do farmaceutico
         /// </summary>
         /// <param name="nome"></param>
         /// <param name="idade"></param>

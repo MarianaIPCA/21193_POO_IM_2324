@@ -27,6 +27,13 @@ namespace MDLL
         #region Metodos
 
         #region Construtores
+        /// <summary>
+        /// Construtor do medicamento
+        /// </summary>
+        /// <param name="nomeMed"></param>
+        /// <param name="t"></param>
+        /// <param name="dv"></param>
+        /// <exception cref="DataInvalida"></exception>
         public Medicamento(string nomeMed, TipoMedicamentos t, string dv)
         {
             this.nome = nomeMed;
@@ -41,7 +48,9 @@ namespace MDLL
             }   
         }
 
-        //pré definição do medicamento ao ser criado
+        /// <summary>
+        /// pré definição do medicamento ao ser criado
+        /// </summary>
         public Medicamento()
         {
             nome = "";
@@ -52,6 +61,7 @@ namespace MDLL
         #endregion
 
         #region Propriedades
+
         public string NomeMedicamento
         {
             set { nome = value; }
@@ -80,7 +90,11 @@ namespace MDLL
         #endregion
 
         #region Outros Metodos
-
+        /// <summary>
+        /// Permite que a classe seja comparada entre medicamentos
+        /// </summary>
+        /// <param name="m"></param>
+        /// <returns></returns>
         public int CompareTo(Medicamento m)
         {
             return 1;
