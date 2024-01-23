@@ -8,11 +8,17 @@ using System.Security.Principal;
 
 namespace FDLL
 {
+
+    
     public class Farmacia: IFarmacia
     {
         #region Atributos
         private string nome;
         private static List<Medicamento> medicamentos;
+
+        Dictionary<TipoMedicamentos, List<Medicamento>> x;
+
+
         private string filePath = "dadosfarmacia.bin"; 
         #endregion
 
@@ -46,7 +52,7 @@ namespace FDLL
         /// </summary>
         /// <param name="medicamento"></param>
         /// <returns></returns>
-        public bool InserirMedicamento(Medicamento medicamento)
+        public static bool InserirMedicamento(Medicamento medicamento)
         {
             if (medicamento == null) 
             { 

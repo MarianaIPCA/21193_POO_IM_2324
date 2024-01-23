@@ -17,15 +17,29 @@ namespace FRDLL
         /// <param name="m"></param>
         /// <param name="f"></param>
         /// <returns></returns>
-        public bool InserirMedicamentoErrado(Medicamento m, Farmacia f)
+        public static bool InserirMedicamentoErrado(Medicamento m)
         {
             if (m.TipoMed != TipoMedicamentos.Analgesico)   // Regra de negócio
             {
-                f.InserirMedicamento(m);
+                Farmacia.InserirMedicamento(m);
                 return true;
             }
             return false;
         }
+
+        public static bool InsereMedicamento(Medicamento m)
+        {
+           if (m.NomeMedicamento==null) {
+
+                return false;
+           }
+            Farmacia.InserirMedicamento(m);//Inserir
+            return true;
+           
+        }
+        
+
+
 
     }
 }

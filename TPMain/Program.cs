@@ -18,6 +18,10 @@ namespace TPMain
         public static void Main()
         {
             CriarInstanciaFarmacia();
+            Medicamento m = new Medicamento();  
+
+
+            Regras.InsereMedicamento(m);
         }
 
         public static Farmacia CriarInstanciaFarmacia()

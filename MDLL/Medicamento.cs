@@ -61,7 +61,9 @@ namespace MDLL
         #endregion
 
         #region Propriedades
-
+        /// <summary>
+        /// Propriedades do medicamento
+        /// </summary>
         public string NomeMedicamento
         {
             set { nome = value; }
